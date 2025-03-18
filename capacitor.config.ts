@@ -9,7 +9,22 @@ const config: CapacitorConfig = {
       resize: 'ionic', // или 'ionic'
       scrollAssist: true,
       scrollPadding: true
-    }
+    },
+    SplashScreen: {
+      launchShowDuration: 0,
+      launchFadeOutDuration: 0,
+      backgroundColor: "#ffffffff",
+      androidSplashResourceName: "splash",
+      androidScaleType: "CENTER_CROP",
+      showSpinner: true,
+      androidSpinnerStyle: "large",
+      iosSpinnerStyle: "small",
+      spinnerColor: "#999999",
+      splashFullScreen: true,
+      splashImmersive: true,
+      layoutName: "launch_screen",
+      useDialog: true,
+    },
   }
 };
 
