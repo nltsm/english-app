@@ -1,0 +1,27 @@
+.content {
+	padding: 15px;
+	background: #fff;
+	border-radius: 15px;
+	z-index: 2;
+	position: relative;
+	margin-top: calc(135px + @paddingTop);
+	
+	&.__fixed-height {
+		height: calc(100% - 135px - @paddingTop);
+		min-height: 450px;
+	}
+	&.__min-top {
+		margin-top: calc(67px + @paddingTop);
+	}
+	&_data {
+		height: 100%;
+	}
+	&_center {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		flex-direction: column;
+	}
+}
