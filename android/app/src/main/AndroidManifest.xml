@@ -20,10 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-                android:name="com.getcapacitor.BridgeActivity"
-                android:windowSoftInputMode="adjustResize">
-        </activity>
+        <activity android:name="com.getcapacitor.BridgeActivity" android:windowSoftInputMode="adjustResize" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
