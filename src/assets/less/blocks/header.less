@@ -1,5 +1,5 @@
 .header {
-	padding: calc(5px + @paddingTop) 10px 5px;
+	padding: calc(5px + @phonePaddingTop) 10px 5px;
 	border-bottom: 1px solid #eee;
 	position: fixed;
 	top: 0;
@@ -39,10 +39,23 @@
 		position: relative;
 		overflow: hidden;
 		box-shadow: 2px 2px 2px rgba(34, 39, 99, 0.05);
+		width: 40px;
+		height: 40px;
+		
+		&.__no-bg {
+			box-shadow: none;
+		}
+		&.__ml0 {
+			margin-left: 0;
+		}
 		
 		img {
 			width: 20px;
 			display: block;
+		}
+		svg {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }

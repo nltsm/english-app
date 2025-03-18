@@ -1,4 +1,23 @@
-@paddingTop: 30px;
+@phonePaddingTop: 30px;
+@topBlockHeight: 137px;
+@headerHeight: 57px;
+
+@bottomBLockHeight: 65px;
 
 @desktop: ~"(min-width: 1200px)";
 @tablet: ~"(min-width: 750px)";
+
+.placeholder(@rules) {
+	&::-webkit-input-placeholder {
+		@rules();
+	}
+	&:-moz-placeholder {
+		@rules();
+	}
+	&::-moz-placeholder {
+		@rules();
+	}
+	&:-ms-input-placeholder {
+		@rules();
+	}
+}

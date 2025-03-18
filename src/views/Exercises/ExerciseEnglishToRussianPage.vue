@@ -30,6 +30,9 @@ import PlayIcon from "@/ui/icons/PlayIcon.vue";
 					<div class="content_center">
 						<div class="exercise">
 							<div class="exercise_content">
+								<div class="exercise_image">
+									<img src="@/assets/demo/head.webp" alt="">
+								</div>
 								<div class="exercise_word">hello</div>
 								<div class="exercise_icons">
 									<div class="icons __center">

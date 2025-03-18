@@ -55,7 +55,12 @@ import {IonPage, IonContent, IonRippleEffect, IonProgressBar} from '@ionic/vue';
 						<h1 class="h1-like">Словарь</h1>
 
 						<router-link :to="{name: 'exercises.review'}" style="display: block; padding: 10px; border: 1px solid #eee; margin-bottom: 10px;">Запоминание</router-link>
+						
 						<router-link :to="{name: 'exercises.english-to-russian'}" style="display: block; padding: 10px; border: 1px solid #eee; margin-bottom: 10px;">С английского на русский</router-link>
+						
+						<router-link :to="{name: 'exercises.build'}" style="display: block; padding: 10px; border: 1px solid #eee; margin-bottom: 10px;">Конструктор</router-link>
+						
+						<router-link :to="{name: 'exercises.dictant'}" style="display: block; padding: 10px; border: 1px solid #eee; margin-bottom: 10px;">Диктант</router-link>
 
 						<div class="levels_items">
 							<div class="levels_item ion-activatable">

@@ -7,6 +7,8 @@ import WordsPage from "@/views/Words/WordsPage.vue";
 import ReviewPage from "@/views/Words/ReviewPage.vue";
 import ExerciseReviewPage from "@/views/Exercises/ExerciseReviewPage.vue";
 import ExerciseEnglishToRussianPage from "@/views/Exercises/ExerciseEnglishToRussianPage.vue";
+import ExersiseBuild from "@/views/Exercises/ExersiseBuild.vue";
+import ExerciseDictant from "@/views/Exercises/ExerciseDictant.vue";
 
 const routes: Array<RouteRecordRaw> = [
     // home
@@ -43,6 +45,8 @@ const routes: Array<RouteRecordRaw> = [
         children: [
             {path: 'review', component: ExerciseReviewPage, name: 'exercises.review'},
             {path: 'english-to-russian', component: ExerciseEnglishToRussianPage, name: 'exercises.english-to-russian'},
+            {path: 'build', component: ExersiseBuild, name: 'exercises.build'},
+            {path: 'dictant', component: ExerciseDictant, name: 'exercises.dictant'},
         ]
     },
 ]

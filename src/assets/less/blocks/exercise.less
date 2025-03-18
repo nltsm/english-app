@@ -13,6 +13,10 @@
 			box-shadow: 2px 2px 5px rgba(151, 151, 151, 0.4);
 			display: block;
 			margin: 0 auto 10px;
+			
+			@media screen and (max-height: 700px) {
+				width: 100px;
+			}
 		}
 		span {
 			font-size: 14px;
@@ -26,6 +30,18 @@
 		border-bottom: 1px solid #eee;
 		padding-bottom: 5px;
 		color: #4195ca;
+		
+		input {
+			width: 100%;
+			border: none;
+			outline: none;
+			text-align: center;
+			
+			.placeholder({
+				color: #d1d1d1;
+				font-size: 18px;
+			});
+		}
 	}
 	&_translate {
 		font-size: 16px;
@@ -47,6 +63,10 @@
 	}
 	&_answers {
 		margin-top: 50px;
+
+		@media screen and (max-height: 700px) {
+			margin-top: 20px;
+		}
 	}
 	&_answer {
 		width: 80%;
@@ -61,5 +81,20 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+	&_letters {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 50px;
+	}
+	&_letter {
+		box-shadow: 2px 2px 5px rgba(56, 46, 119, 0.3);
+		margin: 5px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

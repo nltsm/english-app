@@ -1,45 +1,35 @@
 <template>
 	<ion-page>
-		<ion-tabs>
-			<ion-router-outlet></ion-router-outlet>
+		<ion-router-outlet></ion-router-outlet>
+		
+		<div class="bottom-tabs">
+			<router-link :to="{name: 'home'}" class="bottom-tabs_tab">
+				<div class="tab-bar-image">
+					<LogoIcon/>
+				</div>
+				<label>Главная</label>
+			</router-link>
 
-			<ion-tab-bar slot="bottom">
-				<ion-tab-button tab="home">
-					<router-link :to="{name: 'home'}" class="tab-link">
-						<div class="tab-bar-image">
-							<LogoIcon/>
-						</div>
-						<ion-label>Главная</ion-label>
-					</router-link>
-				</ion-tab-button>
+			<router-link :to="{name: 'words.index'}" class="bottom-tabs_tab">
+				<div class="tab-bar-image">
+					<DictionaryIcon/>
+				</div>
+				<label>Словарь</label>
+			</router-link>
 
-				<ion-tab-button tab="words">
-					<router-link :to="{name: 'words.index'}" class="tab-link">
-						<div class="tab-bar-image">
-							<DictionaryIcon/>
-						</div>
-						<ion-label>Словарь</ion-label>
-					</router-link>
-				</ion-tab-button>
-
-
-				<ion-tab-button tab="cards">
-					<router-link :to="{name: 'words.review'}" class="tab-link">
-						<div class="tab-bar-image">
-							<PremiumIcon/>
-						</div>
-						<ion-label>Премиум</ion-label>
-					</router-link>
-				</ion-tab-button>
-
-				<ion-tab-button tab="tab4" href="/tabs/tab4">
-					<div class="tab-bar-image">
-						<UserIcon/>
-					</div>
-					<ion-label>Профиль</ion-label>
-				</ion-tab-button>
-			</ion-tab-bar>
-		</ion-tabs>
+			<router-link :to="{name: 'words.review'}" class="bottom-tabs_tab">
+				<div class="tab-bar-image">
+					<PremiumIcon/>
+				</div>
+				<label>Премиум</label>
+			</router-link>
+			<router-link :to="{name: 'words.review'}" class="bottom-tabs_tab">
+				<div class="tab-bar-image">
+					<UserIcon/>
+				</div>
+				<label>Профиль</label>
+			</router-link>
+		</div>
 	</ion-page>
 </template>
 

@@ -1,20 +1,36 @@
 .content {
-	padding: 15px;
-	background: #fff;
-	border-radius: 15px;
-	z-index: 2;
+	z-index: 20;
 	position: relative;
-	margin-top: calc(135px + @paddingTop);
+	padding-top: calc(@topBlockHeight + @phonePaddingTop);
+	padding-bottom: @bottomBLockHeight;
+	pointer-events: none;
+	overflow: auto;
 	
 	&.__fixed-height {
-		height: calc(100% - 135px - @paddingTop);
-		min-height: 450px;
+		height: 100%;
 	}
 	&.__min-top {
-		margin-top: calc(67px + @paddingTop);
+		padding-top: calc(@headerHeight + @phonePaddingTop);
 	}
+	&.__pb0 {
+		padding-bottom: 0;
+	}
+	
+	&_data {
+		padding: 15px;
+		background: #fff;
+		border-radius: 20px 20px 0 0;
+		pointer-events: auto;
+	}
+	
 	&_data {
 		height: 100%;
+	}
+	&.__fixed-height &_data {
+		min-height: 450px;
+	}
+	&.__no-min-height &_data {
+		min-height: auto;
 	}
 	&_center {
 		height: 100%;
