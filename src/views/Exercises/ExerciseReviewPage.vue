@@ -26,7 +26,7 @@ import PlayIcon from "@/ui/icons/PlayIcon.vue";
 				</div>
 			</div>
 
-			<div class="content __fixed-height __min-top">
+			<div class="content __fixed-height __no-min-height __pb0 __min-top">
 				<div class="content_data">
 					<div class="content_center">
 						<div class="exercise">
